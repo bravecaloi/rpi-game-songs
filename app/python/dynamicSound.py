@@ -33,7 +33,7 @@ AUDIO_MUSIC_PATH = '/home/pi/rpi-game-songs/app/audio'
 AUDIO_MUSIC_TYPE_0 = AUDIO_MUSIC_PATH  + '/guitarra'
 AUDIO_MUSIC_TYPE_1 = AUDIO_MUSIC_PATH  + '/banjo'
 AUDIO_MUSIC_TYPE_2 = AUDIO_MUSIC_PATH  + '/cello'
-AUDIO_MUSIC_TYPE_3 = AUDIO_MUSIC_PATH  + '/new_piano'
+AUDIO_MUSIC_TYPE_3 = AUDIO_MUSIC_PATH  + '/piano'
 
 
 
