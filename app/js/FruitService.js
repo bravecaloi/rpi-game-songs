@@ -5,13 +5,14 @@
 
   app.service('FruitService', function() {
 
+    var SPEED_FRUITS = 3;
 
     /**
      * Animates a fruit across the screen
      */
     var animateFruit = function(fruit, callback){
       fruit.elem.style['-webkit-animation-name'] = 'moveit';
-      fruit.elem.style['-webkit-animation-duration'] = 4 + 's';
+      fruit.elem.style['-webkit-animation-duration'] = SPEED_FRUITS + 's';
       fruit.elem.style['display'] = 'block';
 
       fruit.elem.addEventListener('webkitAnimationEnd', function(){

@@ -3,7 +3,7 @@ SONGS = [
     'position': 0,
     'name': 'Feliz Cumpleaños',
     'notes': 'DO DO RE DO FA MI DO DO RE DO SOL FA FA LA DO LA FA FA MI RE SI SI LA FA SOL FA',
-    'times': '01 01 01 01 02 02 01 01 01 01 02 02 01 01 01 01 02 02 01 01 02 02 02 02 02 02'
+    'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
   },
   {
     'position': 1,
