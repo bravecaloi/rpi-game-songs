@@ -320,22 +320,28 @@ body {
   font-weight: 400
 }
 
-#main #song {
+#main #gamePlayContainer{
+  width: 60%;
+  margin-left: 20%;
   position: absolute;
+  border: 10px double rgba(228, 102, 31, 0.7);
+}
+
+#main #song {
+  position: relative;
   top: 50px;
   margin: 340px 0 0;
   height: 802px;
-  position: relative;
 }
 
 #threashold {
   position: absolute;
-  bottom: 250px;
+  bottom: 350px;
   width: 100%;
   height: 120px;
   margin-top: 300px;
   background-color: yellow;
-  opacity: 0.3;
+  opacity: 0.4;
   color: #000;
   font-size: 30px;
 }
@@ -346,7 +352,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #main #song .col-DO {
@@ -384,10 +390,10 @@ body {
 }
 @-webkit-keyframes moveit {
   0% {
-    transform: translateY(-300px);
+    transform: translateY(-350px);
   }
   100% {
-    transform: translateY(350px);
+    transform: translateY(450px);
   }
 }
 
