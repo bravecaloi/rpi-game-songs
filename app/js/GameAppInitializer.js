@@ -16,29 +16,16 @@ SONGS = [
   },
   {
     'position': 1,
-    'name': 'Himno de la Alegría',
-    'notes': 'RE DO FA MI DO DO RE DO FA MI DO DO DO DO'
+    'name': 'Estrellita',
+    'notes': 'DO DO SOL SOL LA LA SOL FA FA MI MI RE RE DO SOL SOL FA FA MI MI RE SOL SOL FA FA MI MI RE DO DO SOL SOL LA LA SOL FA FA MI MI RE RE DO',
+    'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
   },
   {
     'position': 2,
-    'name': 'Enter Sandman',
-    'notes': 'FA MI DO DO RE DO FA MI DO DO RE DO DO DO RE DO FA '
-  },
-  {
-    'position': 3,
-    'name': 'Spagheti del rock',
-    'notes': 'MI DO DO RE DO FA MI DO DO RE DO FA DO DO RE DO FA DO DO RE DO FA DO DO RE DO FA'
-  },
-  {
-    'position': 4,
-    'name': 'Chopin 1',
-    'notes': 'DO DO RE DO FA MI DO DO RE'
-  },
-  {
-    'position': 5,
-    'name': 'Autoum Leaves',
-    'notes': 'DO DO RE DO FA DO DO RE DO FA DO DO RE DO FA MI DO DO RE DO FA MI'
-  },
+    'name': 'Himno de la Alegría',
+    'notes': 'MI MI FA SOL SOL FA MI RE DO DO RE MI MI RE RE MI MI FA SOL SOL FA MI RE DO DO RE MI RE DO DO RE RE MI DO RE MI FA MI DO RE MI FA MI RE DO RE SOL',
+    'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
+  }
 ];
 
 TONES = ['DO','RE','MI','FA','SOL','LA','SI'];
