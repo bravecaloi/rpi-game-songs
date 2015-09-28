@@ -24,12 +24,13 @@
 
     var createAllFruits = function(){
       var notes = ctrl.selectedSong.notes.split(' ');
-      var times = ctrl.selectedSong.times.split(' ');
+      // var times = ctrl.selectedSong.times.split(' ');
 
       var delay = 0;
 
       for (var i = 0; i < notes.length; i++) {
-        delay += Number(times[i]);
+        // delay += Number(times[i]);
+        delay += 1;
         var fruit = FruitService.createFruit( i, notes[i],  delay );
         ctrl.fruits.push(fruit);
       }
