@@ -5,7 +5,7 @@
 
   app.service('FruitService', function() {
 
-    var SPEED_FRUITS = 3;
+    var SPEED_FRUITS = 2.5;
 
     /**
      * Animates a fruit across the screen
