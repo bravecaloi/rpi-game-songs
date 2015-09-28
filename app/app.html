@@ -13,31 +13,19 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
-
 	<!-- libs  -->
 	<script src="lib/angular.min.js" charset="utf-8"></script>
 
+	<!-- node.js webserver -->
+	<script src="js/GameServer.js" charset="utf-8"></script>
+
 	<!-- front-end controllers  -->
+	<script src="js/Songs.js" charset="utf-8"></script>
 	<script src="js/GameAppInitializer.js" charset="utf-8"></script>
 	<script src="js/GameController.js" charset="utf-8"></script>
 	<script src="js/FruitService.js" charset="utf-8"></script>
 	<script src="js/NotificationsService.js" charset="utf-8"></script>
-
-
-	<!-- node.js webserver -->
-	<script src="js/GameServer.js" charset="utf-8"></script>
-	<script>
-		// This enables to run it in a browser or nwjs
-		var global = global || {
-			'nwjs': false
-		};
-
-		if (global.nwjs != false) {
-			global.window = window;
-			global.gui = require('nw.gui');
-			game.startServer();
-		}
-	</script>
+	<script src="js/Watchdog.js" charset="utf-8"></script>
 
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -46,6 +34,9 @@
 
 <body ng-controller="GameMechanicsController as mechanics">
 	<div id="main">
+
+		<div id="splash"></div>
+
 		<header class="">
 			<div class="instruments">
 				<a href="#" id="instrumentIcon1" class="instrument01" ng-click="startSongCtrl()">

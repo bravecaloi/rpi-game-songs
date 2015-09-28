@@ -1,35 +1,37 @@
 exports.touched = function(req, res) {
-  var key = Number(req.params.number);
+  global.Watchdog.refresh();
 
-  switch (key) {
+  if (global.isSplash == true) {
 
-    //Music notes
-    case 00:
-    case 01:
-    case 02:
-    case 03:
-    case 04:
-    case 05:
-    case 06:
-      global.GameController.checkFruitsPosition(key);
-      break;
+    global.Watchdog.hideSplash();
 
-    // Change instruments sounds and TODO: starts song (TBD)
-    case 07:
-    case 08:
-    case 09:
-    case 10:
-      global.NotificationsService.changeInstrument(key);
-      global.GameController.startSong();
-      break;
+  } else {
 
-    // Scrolls the song up (loops)
-    case 11:
-      global.GameController.scrollUpSong();
-      break;
+    var key = Number(req.params.number);
+    switch (key) {
+      case 00:
+      case 01:
+      case 02:
+      case 03:
+      case 04:
+      case 05:
+      case 06:
+        global.GameController.checkFruitsPosition(key);
+        break;
+      case 07:
+      case 08:
+      case 09:
+      case 10:
+        global.NotificationsService.changeInstrument(key);
+        global.GameController.startSong();
+        break;
+      case 11:
+        global.GameController.scrollUpSong();
+        break;
+      default:
+        console.log('No key definition for ' + key);
+    }
 
-    default:
-      console.log('No key definition for ' + key);
   }
 
   res.send('OK');
