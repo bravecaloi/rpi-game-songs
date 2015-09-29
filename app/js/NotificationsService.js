@@ -49,8 +49,16 @@
     }
 
     var gameFinished = function(total) {
+      var percent = userPoints / total;
+      var express = '';
+
+      if(percent >= 90) express = ' Perfecto!';
+      if(percent < 90 && percent >= 70) express = ' Excelente!';
+      if(percent < 70 && percent >= 30) express = ' Muy Bien!';
+      if(percent < 30) express = ' A seguir practicando...';
+
       document.getElementById('game_finished').style['display'] = 'block';
-      document.getElementById('game_finished_text').innerHTML = userPoints + ' / ' + total +' Puntos!';
+      document.getElementById('game_finished_text').innerHTML =  userPoints + ' / ' +  total + ' Puntos <br /> ' + express;
     }
 
     var prevCounterType = 'excellent';
