@@ -339,10 +339,8 @@ body {
 }
 
 #main #gamePlayContainer{
-  width: 60%;
-  margin-left: 20%;
+  width: 100%;
   position: absolute;
-  border: 10px double rgba(228, 102, 31, 0.7);
 }
 
 #main #song {
@@ -354,9 +352,9 @@ body {
 
 #threashold {
   position: absolute;
-  bottom: 350px;
+  bottom: 250px;
   width: 100%;
-  height: 120px;
+  height: 180px;
   margin-top: 300px;
   background-color: yellow;
   opacity: 0.4;
@@ -370,7 +368,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #main #song .col-DO {
