@@ -187,6 +187,24 @@ body {
   width: 100%;
   z-index: 1000
 }
+
+#main #game_finished, #main #game_counter {
+  padding-top: 20%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100000;
+  display: none;
+}
+
+#main #game_finished_text, #main #game_counter_text{
+  text-align: center;
+  top: 50%;
+  font-size: 60px;
+  color: orange;
+}
+
+
 #main header .instruments .instrument01 {
   position: absolute;
   left: 60px;

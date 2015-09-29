@@ -13,12 +13,20 @@
     ctrl.songName = document.getElementById('songName');
     ctrl.songAuthor = document.getElementById('songAuthor');
 
+    ctrl.fruitsCounter = 0;
     var fruitAnimationEnds = function(fruit){
       fruit.elem.style.webkitAnimationName = '';
       fruit.elem.style['display'] = 'none';
 
       if(fruit.hit == false){
         NotificationsService.fruitMissed(fruit);
+      }
+
+      ctrl.fruitsCounter++;
+
+      if(ctrl.fruitsCounter == ctrl.fruits.length){
+        ctrl.fruitsCounter = 0;
+        NotificationsService.gameFinished(ctrl.fruits.length);
       }
     }
 
@@ -52,8 +60,12 @@
       ctrl.fruits = [];
       NotificationsService.resetPoints();
 
-      createAllFruits();
-      animateAllFruits();
+      NotificationsService.showStartGameCounter();
+
+      $scope.$on('finishStartGameCounter', function() {
+        createAllFruits();
+        animateAllFruits();
+      });
     }
 
     $scope.startSongCtrl = startSong;

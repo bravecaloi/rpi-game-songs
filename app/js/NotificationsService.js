@@ -3,7 +3,7 @@
 
   var app = angular.module(GAME_APP_NAME);
 
-  app.service('NotificationsService', function() {
+  app.service('NotificationsService', function($rootScope) {
 
     var userPoints = 0;
 
@@ -16,31 +16,61 @@
       7: 'instrumentIcon1',
       8: 'instrumentIcon2',
       9: 'instrumentIcon3',
-      10:'instrumentIcon4'
+      10: 'instrumentIcon4'
     };
     var selectedInstrument;
 
-    function setFeedback(str){
+    function setFeedback(str) {
       feedbackText.innerHTML = str;
     }
 
+    var startGameCounter = 3;
+    var startGameCounterWatcher = undefined;
+
+    function showStartGameCounter() {
+      document.getElementById('game_finished').style['display'] = 'none';
+      document.getElementById('game_counter').style['display'] = 'block';
+      document.getElementById('game_counter_text').innerHTML = 'Empieza en ' + startGameCounter;
+      if (startGameCounterWatcher != undefined) {
+        clearInterval(startGameCounterWatcher);
+      }
+
+      startGameCounterWatcher = setInterval(function() {
+        if (startGameCounter == 0) {
+          startGameCounter = 3;
+          clearInterval(startGameCounterWatcher);
+          document.getElementById('game_counter').style['display'] = 'none';
+          startGameCounterWatcher = undefined;
+          $rootScope.$broadcast('finishStartGameCounter');
+        } else {
+          document.getElementById('game_counter_text').innerHTML = 'Empieza en ' + --startGameCounter;
+        }
+      }, 1000);
+    }
+
+    var gameFinished = function(total) {
+      document.getElementById('game_finished').style['display'] = 'block';
+      document.getElementById('game_finished_text').innerHTML = userPoints + ' / ' + total +' Puntos!';
+    }
+
     var prevCounterType = 'excellent';
-    function animatePointsCounter(str, type){
+
+    function animatePointsCounter(str, type) {
       pointsCounter.classList.remove(prevCounterType);
       pointsCounter.classList.add('bounceIn');
       pointsCounter.classList.add(type);
       pointsCounter.innerHTML = str;
-      setTimeout(function(){
+      setTimeout(function() {
         pointsCounter.classList.remove('bounceIn');
         prevCounterType = type;
       }, 500);
     }
 
-    var changeInstrument = function(key){
-      if(selectedInstrument != undefined){
-         selectedInstrument.classList.remove('active');
-         selectedInstrument.classList.remove('animated');
-         selectedInstrument.classList.remove('wobble');
+    var changeInstrument = function(key) {
+      if (selectedInstrument != undefined) {
+        selectedInstrument.classList.remove('active');
+        selectedInstrument.classList.remove('animated');
+        selectedInstrument.classList.remove('wobble');
       }
       selectedInstrument = document.getElementById(keyInstrument[key]);
       selectedInstrument.classList.add('active');
@@ -48,7 +78,7 @@
       selectedInstrument.classList.add('wobble');
     }
 
-    var resetPoints = function(){
+    var resetPoints = function() {
       userPoints = 0;
       totalPoints.innerHTML = userPoints;
     }
@@ -56,7 +86,7 @@
     /**
      * Activated when a Fruit is correctly hit
      */
-    var fruitHit = function(fruit){
+    var fruitHit = function(fruit) {
       setFeedback('Muy bien!');
       fruit.hit = true;
       fruit.elem.style['opacity'] = 0.5;
@@ -67,7 +97,7 @@
     /**
      * Activated when a fruit was missed
      */
-    var fruitMissed = function(fruit){
+    var fruitMissed = function(fruit) {
       setFeedback('Se escapó ' + fruit.tone + '!');
       animatePointsCounter('0', 'bad');
     }
@@ -76,7 +106,7 @@
     /**
      * Activated when a note is played but no fruit is hit
      */
-    var toneFailed = function(note){
+    var toneFailed = function(note) {
       // do nothing
     }
 
@@ -95,7 +125,9 @@
       fruitMissed: fruitMissed,
       toneFailed: toneFailed,
       changeInstrument: changeInstrument,
-      resetPoints: resetPoints
+      resetPoints: resetPoints,
+      showStartGameCounter: showStartGameCounter,
+      gameFinished: gameFinished
     };
 
   });
