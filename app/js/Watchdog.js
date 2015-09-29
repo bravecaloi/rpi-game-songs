@@ -12,6 +12,7 @@
 
     var hideSplash = function(){
       document.getElementById('splash').style['display'] = 'none';
+      document.getElementById('game_finished').style['display'] = 'none';
       global.isSplash = false;
       // global.GameController.startSong();
     }

@@ -13,7 +13,7 @@ SONGS = [
   },
   {
     'position': 2,
-    'name': 'PUENTE DE LONDRES',
+    'name': 'Puente de Londres',
     'notes': 'SOL LA SOL FA MI FA SOL RE MI FA MI FA SOL SOL LA SOL FA MI FA SOL RE SOL MI DO',
     'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
   },
@@ -25,13 +25,13 @@ SONGS = [
   },
   {
     'position': 4,
-    'name': 'LA GRANJA DEL VIEJO MC DONALD',
+    'name': 'La Granja del Viejo McDonald',
     'notes': 'RE SOL SOL SOL RE MI MI RE SI SI LA LA SOL RE SOL SOL SOL RE MI MI RE SI SI LA LA SOL RE RE SOL SOL SOL RE RE SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL SOL RE MI MI RE SI SI LA LA SOL',
     'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
   },
   {
     'position': 5,
-    'name': 'LA CUCARACHA',
+    'name': 'La Cucaracha',
     'notes': 'DO DO DO FA LA DO DO DO FA LA FA FA MI MI RE RE DO DO DO DO MI SOL DO DO DO MI SOL DO RE DO SI LA SOL FA',
     'times': '01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
   }
