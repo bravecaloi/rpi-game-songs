@@ -25,17 +25,19 @@
       ctrl.fruitsCounter++;
 
       if(ctrl.fruitsCounter == ctrl.fruits.length){
-        ctrl.fruitsCounter = 0;
         NotificationsService.gameFinished(ctrl.fruits.length);
       }
     }
 
     var createAllFruits = function(){
+      ctrl.fruits = [];
+      ctrl.fruitsContainer.innerHTML = '';
+      ctrl.fruitsCounter = 0;
+
       var notes = ctrl.selectedSong.notes.split(' ');
       // var times = ctrl.selectedSong.times.split(' ');
 
       var delay = 0;
-
       for (var i = 0; i < notes.length; i++) {
         // delay += Number(times[i]);
         delay += 1;
@@ -56,10 +58,7 @@
     }
 
     var startSong = function(){
-      ctrl.fruitsContainer.innerHTML = '';
-      ctrl.fruits = [];
       NotificationsService.resetPoints();
-
       NotificationsService.showStartGameCounter();
 
       $scope.$on('finishStartGameCounter', function() {
@@ -67,8 +66,6 @@
         animateAllFruits();
       });
     }
-
-    $scope.startSongCtrl = startSong;
 
     var changeSong = function(position){
       ctrl.selectedSong = SONGS[position];
