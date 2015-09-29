@@ -49,7 +49,7 @@
     }
 
     var gameFinished = function(total) {
-      var percent = userPoints / total;
+      var percent = (userPoints * 100) / total;
       var express = '';
 
       if(percent >= 90) express = ' Perfecto!';
