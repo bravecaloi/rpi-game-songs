@@ -12,7 +12,7 @@ if(global.nwjs != false){
 GAME_APP_NAME = 'GameApp';
 DEFAULT_SONG = 0;
 DEFAULT_INSTRUMENT = 07;
-DELAY_UNIT_TIME = 700;
+DELAY_UNIT_TIME = 1200;
 
 (function(){
   'use strict'
