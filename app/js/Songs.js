@@ -8,8 +8,8 @@ SONGS = [
   {
     'position': 1,
     'name': 'Feliz Cumpleaños',
-    'notes': 'DO DO RE DO FA MI DO DO RE DO SOL FA DO DO LA FA FA FA MI RE LA FA DO RE',
-    'times': '03 03 03 03 03 02 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03'
+    'notes': 'DO DO RE DO FA MI DO DO RE DO SOL FA DO DO LA FA FA FA MI RE LA FA DO RE DO',
+    'times': '03 03 03 03 03 02 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03 03'
   },
   {
     'position': 2,
@@ -37,9 +37,9 @@ SONGS = [
   },
   {
     'position': 6,
-    'name': 'Noche de paz',
-    'notes': 'SOL LA SOL MI SOL LA SOL MI RE RE SI DO DO SOL LA LA DO SI LA SOL LA SOL MI LA LA DO SI LA SOL LA SOL MI RE RE RE FA RE SI DO MI DO SOL MI SOL FA RE DO RE RE RE FA RE SI DO MI DO SOL MI SOL FA RE DO ', 
-    'times': '01 01 01 02 01 01 01 02 01 01 01 01 01 02 01 01 01 01 01 01 02 01 01 01 01 01 01 01 01 02 01 01 01 01 01 01 02 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01'
+    'name': 'Un buen compañero',
+    'notes': 'DO MI MI MI RE MI FA MI MI RE RE RE DO RE MI DO DO MI MI MI RE MI FA LA LA SOL MI FA RE DO', 
+    'times': '01 01 01 02 01 01 01 02 01 01 01 01 01 02 01 01 01 01 01 01 02 01 01 01 01 01 01 01 01 02'
   },
   {
     'position': 7,
