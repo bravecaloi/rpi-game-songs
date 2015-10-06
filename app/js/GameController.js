@@ -26,6 +26,7 @@
 
       if(ctrl.fruitsCounter == ctrl.fruits.length){
         NotificationsService.gameFinished(ctrl.fruits.length);
+        global.gameRunning = false;
       }
     }
 
@@ -58,6 +59,8 @@
     }
 
     var startSong = function(){
+      global.gameRunning = true;
+
       NotificationsService.resetPoints();
       NotificationsService.showStartGameCounter();
 

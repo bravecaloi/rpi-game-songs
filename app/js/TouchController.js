@@ -8,6 +8,11 @@ exports.touched = function(req, res) {
   } else {
 
     var key = Number(req.params.number);
+
+    if(global.gameRunning == true && key > 6){
+      return;
+    }
+
     switch (key) {
       case 00:
       case 01:

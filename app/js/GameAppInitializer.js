@@ -18,4 +18,5 @@ DELAY_UNIT_TIME = 1000;
   'use strict'
   var app = angular.module(GAME_APP_NAME, []);
   global.isSplash = true;
+  global.gameRunning = false;
 })();
