@@ -52,11 +52,11 @@ SOUND_MAPPING_0 = {
   4:  AUDIO_MUSIC_TYPE_0 + '/SOL.wav',
   5:  AUDIO_MUSIC_TYPE_0 + '/LA.wav',
   6:  AUDIO_MUSIC_TYPE_0 + '/SI.wav',
-  7:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  8:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  9:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  10: '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  11: '/opt/sonic-pi/etc/samples/perc_bell.wav',
+  7:  AUDIO_MUSIC_PATH + '/p1.wav',
+  8:  AUDIO_MUSIC_PATH + '/p1.wav',
+  9:  AUDIO_MUSIC_PATH + '/p1.wav',
+  10: AUDIO_MUSIC_PATH + '/p1.wav',
+  11: AUDIO_MUSIC_PATH + '/p1.wav',
 }
 sounds_0 = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -74,11 +74,11 @@ SOUND_MAPPING_1 = {
   4:  AUDIO_MUSIC_TYPE_1 +  '/SOL.wav',
   5:  AUDIO_MUSIC_TYPE_1 +  '/LA.wav',
   6:  AUDIO_MUSIC_TYPE_1 +  '/SI.wav',
-  7:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  8:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  9:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  10: '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  11: '/opt/sonic-pi/etc/samples/perc_bell.wav',
+  7:  AUDIO_MUSIC_PATH + '/p1.wav',
+  8:  AUDIO_MUSIC_PATH + '/p1.wav',
+  9:  AUDIO_MUSIC_PATH + '/p1.wav',
+  10: AUDIO_MUSIC_PATH + '/p1.wav',
+  11: AUDIO_MUSIC_PATH + '/p1.wav',
 }
 sounds_1 = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -95,11 +95,11 @@ SOUND_MAPPING_2 = {
   4:  AUDIO_MUSIC_TYPE_2 +  '/SOL.wav',
   5:  AUDIO_MUSIC_TYPE_2 +  '/LA.wav',
   6:  AUDIO_MUSIC_TYPE_2 +  '/SI.wav',
-  7:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  8:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  9:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  10: '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  11: '/opt/sonic-pi/etc/samples/perc_bell.wav',
+  7:  AUDIO_MUSIC_PATH + '/p1.wav',
+  8:  AUDIO_MUSIC_PATH + '/p1.wav',
+  9:  AUDIO_MUSIC_PATH + '/p1.wav',
+  10: AUDIO_MUSIC_PATH + '/p1.wav',
+  11: AUDIO_MUSIC_PATH + '/p1.wav',
 }
 sounds_2 = [0,0,0,0,0,0,0,0,0,0,0,0]
 
@@ -116,11 +116,11 @@ SOUND_MAPPING_3 = {
   4:  AUDIO_MUSIC_TYPE_3 +  '/SOL.wav',
   5:  AUDIO_MUSIC_TYPE_3 +  '/LA.wav',
   6:  AUDIO_MUSIC_TYPE_3 +  '/SI.wav',
-  7:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  8:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  9:  '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  10: '/opt/sonic-pi/etc/samples/perc_bell.wav',
-  11: '/opt/sonic-pi/etc/samples/perc_bell.wav',
+  7:  AUDIO_MUSIC_PATH + '/p1.wav',
+  8:  AUDIO_MUSIC_PATH + '/p1.wav',
+  9:  AUDIO_MUSIC_PATH + '/p1.wav',
+  10: AUDIO_MUSIC_PATH + '/p1.wav',
+  11: AUDIO_MUSIC_PATH + '/p1.wav',
 }
 sounds_3 = [0,0,0,0,0,0,0,0,0,0,0,0]
 
