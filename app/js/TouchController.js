@@ -33,7 +33,7 @@ exports.touched = function(req, res) {
         break;
       case 11:
         global.GameController.scrollUpSong();
-        global.GameController.startSong();
+        // global.GameController.startSong();
         break;
       default:
         console.log('No key definition for ' + key);
