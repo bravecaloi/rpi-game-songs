@@ -3,7 +3,7 @@
 
   var app = angular.module(GAME_APP_NAME);
 
-  app.controller('GameMechanicsController', function($scope, $timeout, FruitService, NotificationsService) {
+  app.controller('GameMechanicsController', function($scope, $timeout, FruitService, NotificationsService, MusicService) {
     var ctrl = this;
 
     ctrl.selectedSong = {};
@@ -25,6 +25,7 @@
       ctrl.fruitsCounter++;
 
       if(ctrl.fruitsCounter == ctrl.fruits.length){
+        MusicService.fadeOut();
         NotificationsService.gameFinished(ctrl.fruits.length);
         global.gameRunning = false;
       }
@@ -65,6 +66,7 @@
       NotificationsService.showStartGameCounter();
 
       $scope.$on('finishStartGameCounter', function() {
+        MusicService.fadeIn();
         createAllFruits();
         animateAllFruits();
       });
