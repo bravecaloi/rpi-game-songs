@@ -64,9 +64,9 @@
 
       NotificationsService.resetPoints();
       NotificationsService.showStartGameCounter();
+      MusicService.fadeIn();
 
       $scope.$on('finishStartGameCounter', function() {
-        MusicService.fadeIn();
         createAllFruits();
         animateAllFruits();
       });
