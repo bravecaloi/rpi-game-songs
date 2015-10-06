@@ -10,6 +10,7 @@ exports.touched = function(req, res) {
     var key = Number(req.params.number);
 
     if(global.gameRunning == true && key > 6){
+      res.send('OK');
       return;
     }
 
