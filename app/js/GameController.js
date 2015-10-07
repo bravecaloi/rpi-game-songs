@@ -25,7 +25,9 @@
       ctrl.fruitsCounter++;
 
       if(ctrl.fruitsCounter == ctrl.fruits.length){
-        MusicService.fadeOut();
+        
+        // MusicService.fadeOut();
+
         NotificationsService.gameFinished(ctrl.fruits.length);
         global.gameRunning = false;
       }
@@ -64,7 +66,9 @@
 
       NotificationsService.resetPoints();
       NotificationsService.showStartGameCounter();
-      MusicService.fadeIn();
+
+      // Confunde la canción
+      // MusicService.fadeIn();
 
       $scope.$on('finishStartGameCounter', function() {
         createAllFruits();
